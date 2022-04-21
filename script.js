@@ -25,12 +25,18 @@ decreaseBtn.addEventListener('click', () => {
 
 const counterColor = count => {
   if (count < 0) {
-    counter.style.setProperty('color', 'var(--decrease-color)');
+    counter.classList.add('decrease');
+    counter.classList.remove('increase');
+    counter.classList.remove('reset');
   }
   if (count > 0) {
-    counter.style.setProperty('color', 'var(--increase-color)');
+    counter.classList.add('increase');
+    counter.classList.remove('decrease');
+    counter.classList.remove('reset');
   }
   if (count == 0) {
-    counter.style.setProperty('color', 'var(--primary-color)');
+    counter.classList.add('reset');
+    counter.classList.remove('decrease');
+    counter.classList.remove('increase');
   }
 };

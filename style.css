@@ -23,7 +23,6 @@
   text-align: center;
   font-weight: bold;
   margin-bottom: 2rem;
-  color: var(--primary-color);
 }
 
 .title {
@@ -33,7 +32,18 @@
 
 .counter {
   font-size: 7rem;
+}
+
+.reset {
   color: var(--primary-color);
+}
+
+.decrease {
+  color: var(--decrease-color);
+}
+
+.increase {
+  color: var(--increase-color);
 }
 
 .buttons {
